@@ -1,0 +1,76 @@
+.card {
+    height: 400px;
+    width: 400px;
+  
+    position: relative;
+  }
+  h1 {
+    text-align: center;
+    margin-top: 200px;
+  }
+  body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .card1 {
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+    position: absolute;
+    top: 1px;
+    transform-origin: left top;
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+  }
+  .card2 {
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    position: absolute;
+    left: 200px;
+    transform-origin: right top;
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+  }
+  .card3 {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    position: absolute;
+    top: 200px;
+    transform-origin: left bottom;
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+  }
+  .card4 {
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    transform-origin: right bottom;
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+  }
+  .main:hover .card2 {
+    transform: rotate(-90deg);
+  }
+  .main:hover .card1 {
+    transform: rotate(90deg);
+  }
+  
+  .main:hover .card3 {
+    transform: rotate(-90deg);
+  }
+  
+  .main:hover .card4 {
+    transform: rotate(90deg);
+  }
+  
