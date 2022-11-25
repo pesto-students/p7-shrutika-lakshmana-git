@@ -27,14 +27,9 @@ if not in browser and browser ask for operating system(os also cached dns inform
 
 
 If OS also dont have ,Browser looks up and makes a query out to internet  to a DNS resolver.This is set off a chain of requests untill the IP address is resolved
-
-
 Now the browser has IP addresss
-
 browser establish a TCP connection with the server  Web server
-
 browser send HTTp request to server
-
 server sends back HTTP reponse
 
 browser render HTTP content
