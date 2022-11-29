@@ -1,17 +1,11 @@
 
 # Week 1 Assignemnt 
-
 Create a web page with HTML and CSS
-
 font used:Lato
-
-
-
-
-
 #Image used
-
 ![App Screenshot](https://vif1g.csb.app/src/assets/cattyboard.jpg)
+
+
 
 
 #How The Browser Work
@@ -112,7 +106,7 @@ Order of script processing
 
 
 Layout and Painting
-imultaneously, the browser also creates a render tree. This tree includes both the styling information as well as the visual instructions that define the order in which the elements will be displayed. The render tree ensures that the content is displayed in the desired order.
+simultaneously, the browser also creates a render tree. This tree includes both the styling information as well as the visual instructions that define the order in which the elements will be displayed. The render tree ensures that the content is displayed in the desired order.
 Further, the render tree goes through the layout process. When a render tree is created, the position or size values are not assigned. The entire process of calculating values for evaluating the desired position is called a layout process. In this process, every node is assigned the exact coordinates. This ensures that every node appears at an accurate position on the screen.
 The final step is to paint the screen, wherein the render tree is traversed, and the renderer’s paint() method is invoked, which paints each node on the screen using the UI backend layer.
 
