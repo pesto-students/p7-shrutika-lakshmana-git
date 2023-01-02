@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <tittle>Js</tittle>
+    </head>
+    <body>
+       
+
+<script>
+  //Create a memoize function that remembers previous inputs and stores them in cache so that itwon’t have to compute the same inputs more than once. The function will take an unspecifiednumber of integer inputs and a reducer method.
+
+function memoize(fn){
+    const caches =  new Map()
+    return function (... args){
+    const key = args.toString();
+    if (caches.has(key)){
+        return caches.get(key);
+    }
+    caches.set(key , fn(...args))
+    return caches.get(key);
+    }
+}
+
+function add(...args) {
+  
+  let sum = 0;
+  for (let arg of args) {
+    sum += arg;
+  }
+  return sum;
+}
+
+function time(fn){
+  console.time()
+  fn();
+  console.log(fn())
+  console.timeEnd()
+ }
+
+const memoizeAdd = memoize(add)
+
+time(()=> memoizeAdd(100,100))
+time(()=> memoizeAdd(100))
+time(()=> memoizeAdd(100,200))
+time(()=> memoizeAdd(100,100))
+
+
+
+ 
+        </script>
+    </body>
+</html>
